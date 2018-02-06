@@ -2,8 +2,8 @@
 //  BrandsView.h
 //  CategoryFilterDemo
 //
-//  Created by 赵娟娟 on 2017/12/18.
-//  Copyright © 2017年 猎鹰全球国际电子商务有限公司. All rights reserved.
+//  Created by ZJ on 2017/12/18.
+//  Copyright . All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

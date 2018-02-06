@@ -2,8 +2,8 @@
 //  ScreeningView.h
 //  CategoryFilterDemo
 //
-//  Created by 赵娟娟 on 17/2/21.
-//  Copyright © 猎鹰全球国际电子商务有限公司. All rights reserved.
+//  Created by ZJ on 17/2/21.
+//  Copyright . All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
