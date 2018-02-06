@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollCell">
+            <rect key="frame" x="0.0" y="0.0" width="166" height="55"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="166" height="55"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分类" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZJ-g3-ipi">
+                        <rect key="frame" x="0.0" y="0.0" width="166" height="55"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <imageView hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Common_Next" translatesAutoresizingMaskIntoConstraints="NO" id="x4K-Q7-SpD">
+                        <rect key="frame" x="144" y="21.5" width="7" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="7" id="NYo-VP-113"/>
+                        </constraints>
+                    </imageView>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更多品牌" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oif-6d-EER">
+                        <rect key="frame" x="10" y="20.5" width="124" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="qZJ-g3-ipi" secondAttribute="bottom" id="0B3-jx-Gs1"/>
+                <constraint firstItem="x4K-Q7-SpD" firstAttribute="centerY" secondItem="Oif-6d-EER" secondAttribute="centerY" id="EBm-vS-Mde"/>
+                <constraint firstItem="x4K-Q7-SpD" firstAttribute="leading" secondItem="Oif-6d-EER" secondAttribute="trailing" constant="10" id="HgU-AT-8cK"/>
+                <constraint firstItem="x4K-Q7-SpD" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="UOC-L7-vll"/>
+                <constraint firstItem="qZJ-g3-ipi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WqZ-Wt-VJK"/>
+                <constraint firstAttribute="trailing" secondItem="x4K-Q7-SpD" secondAttribute="trailing" constant="15" id="esh-Sq-s78"/>
+                <constraint firstItem="Oif-6d-EER" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="gpU-dI-Wuw"/>
+                <constraint firstAttribute="trailing" secondItem="qZJ-g3-ipi" secondAttribute="trailing" id="hQF-qz-2wO"/>
+                <constraint firstItem="qZJ-g3-ipi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vHc-1k-tuY"/>
+            </constraints>
+            <size key="customSize" width="166" height="55"/>
+            <connections>
+                <outlet property="arrowImage" destination="x4K-Q7-SpD" id="6jM-tm-vfe"/>
+                <outlet property="moreBrandLabel" destination="Oif-6d-EER" id="7Zy-al-Kl7"/>
+                <outlet property="nameLabel" destination="qZJ-g3-ipi" id="bPQ-ie-eVm"/>
+            </connections>
+            <point key="canvasLocation" x="-5" y="97.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Common_Next" width="7" height="12"/>
+    </resources>
+</document>
